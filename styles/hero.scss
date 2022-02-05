@@ -842,6 +842,7 @@ body {
       }
     }
     .whole-body-container {
+      min-width: var(--mobile_width);
       .header-navigation {
         .logo {
         }
@@ -851,6 +852,30 @@ body {
         div.hamburger-menu {
           display: block;
           cursor: pointer;
+        }
+      }
+      .banner-container {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        .left-banner-container_section {
+          width: 100%;
+          margin-right: 0;
+          text-align: center;
+        }
+        .right-banner-container_section {
+          width: 100%;
+          .iPad-xd-image-wrapper {
+            img {
+              width: 100%;
+              min-width: 100px;
+              height: auto;
+              min-height: auto;
+              max-height: auto;
+            }
+          }
+          .iPad-xd-image-wrapper::after {
+            height: clamp(9.375rem, calc(0.3944rem + 35.9223vw), 20.9375rem);
+          }
         }
       }
     }
