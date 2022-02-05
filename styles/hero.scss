@@ -860,10 +860,24 @@ body {
       .banner-container {
         flex-direction: column-reverse;
         justify-content: space-evenly;
+        margin-bottom: 5rem;
         .left-banner-container_section {
           width: 100%;
           margin-right: 0;
           text-align: center;
+          margin-top: 4rem;
+          .get-it-on-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+              padding: 0.5rem;
+              font-size: 14px;
+            }
+            a:first-of-type {
+              margin-right: 1.3rem;
+            }
+          }
         }
         .right-banner-container_section {
           width: 100%;
@@ -985,8 +999,8 @@ body {
         max-height: 100px;
       }
       .banner-container {
-        height: calc(100vh - 10vh);
-        min-height: calc(900px - 90px);
+        height: 75vh;
+        min-height: calc(900px - 200px);
         max-height: calc(1080px - 100px);
         margin-bottom: 0;
         .left-banner-container_section {
