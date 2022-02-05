@@ -21,6 +21,7 @@ function formValidation() {
   if (validateEmail(x)) {
     if (inputWrapper.classList.contains("invalid-error")) {
       inputWrapper.classList.remove("invalid-error");
+      input.value = "";
     }
     return true;
   } else {
