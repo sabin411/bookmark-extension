@@ -1038,6 +1038,12 @@ body {
     section.footer-section-container {
       div.footer-contact-us-wrapper {
         max-width: var(--mobile_width);
+        h3 {
+          font-size: 14px;
+        }
+        h2 {
+          font-size: 25px;
+        }
       }
     }
     section.footer-foot-wrapper {

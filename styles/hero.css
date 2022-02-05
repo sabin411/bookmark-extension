@@ -1212,6 +1212,12 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
   body section.footer-section-container div.footer-contact-us-wrapper {
     max-width: var(--mobile_width);
   }
+  body section.footer-section-container div.footer-contact-us-wrapper h3 {
+    font-size: 14px;
+  }
+  body section.footer-section-container div.footer-contact-us-wrapper h2 {
+    font-size: 25px;
+  }
   body section.footer-foot-wrapper .footer-foot-wrapper_content {
     max-width: var(--mobile_width);
   }
