@@ -25,6 +25,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Rubik", sans-serif;
@@ -875,6 +878,96 @@ body {
           }
           .iPad-xd-image-wrapper::after {
             height: clamp(9.375rem, calc(0.3944rem + 35.9223vw), 20.9375rem);
+          }
+        }
+      }
+
+      .feature-container {
+        .feature-tabs {
+          flex-direction: column;
+          padding-right: 0;
+          max-width: 100%;
+          min-width: 100%;
+          div.tab {
+            width: 100%;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .individual-tab-details {
+          height: max-content;
+          min-height: 600px;
+          article.tab-details {
+            flex-direction: column;
+            justify-content: center;
+            .tab-details_left-section {
+              height: 70%;
+              min-height: 200px;
+              img {
+                height: 90%;
+                width: auto;
+                min-width: auto;
+              }
+            }
+            .tab-details_left-section::after {
+            }
+            .tab-details_right-section {
+              margin-top: 2.5rem;
+              margin-left: 0;
+              height: 30%;
+              min-height: 200px;
+              max-height: 250px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      section.faq-container {
+        div.questions-answers-container {
+          width: 80%;
+          min-width: 300px;
+        }
+      }
+    }
+    section.footer-section-container {
+      div.footer-contact-us-wrapper {
+        min-width: var(--mobile_width);
+        height: max-content;
+        min-height: 300px;
+        h3 {
+        }
+        h2 {
+        }
+        form.contact-us-form {
+          flex-direction: column;
+          input {
+            margin-right: 0;
+          }
+          button.form-submit-btn {
+            margin-top: 1rem;
+            width: 260px;
+          }
+        }
+      }
+    }
+    section.footer-foot-wrapper {
+      .footer-foot-wrapper_content {
+        min-width: var(--mobile_width);
+        flex-direction: column;
+        .logo-wrapper {
+          margin-bottom: 1.5rem;
+        }
+        .links-wrapper {
+          margin-left: 0;
+          flex-direction: column;
+          .link {
+            margin: 1rem 0;
+            a {
+              font-size: 20px;
+            }
           }
         }
       }

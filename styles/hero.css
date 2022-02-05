@@ -19,6 +19,10 @@
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   min-height: 100vh;
@@ -1048,6 +1052,108 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
   }
   body .whole-body-container .banner-container .right-banner-container_section .iPad-xd-image-wrapper::after {
     height: clamp(9.375rem, calc(0.3944rem + 35.9223vw), 20.9375rem);
+  }
+  body .whole-body-container .feature-container .feature-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  body .whole-body-container .feature-container .feature-tabs div.tab {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .whole-body-container .feature-container .individual-tab-details {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-height: 600px;
+  }
+  body .whole-body-container .feature-container .individual-tab-details article.tab-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .whole-body-container .feature-container .individual-tab-details article.tab-details .tab-details_left-section {
+    height: 70%;
+    min-height: 200px;
+  }
+  body .whole-body-container .feature-container .individual-tab-details article.tab-details .tab-details_left-section img {
+    height: 90%;
+    width: auto;
+    min-width: auto;
+  }
+  body .whole-body-container .feature-container .individual-tab-details article.tab-details .tab-details_right-section {
+    margin-top: 2.5rem;
+    margin-left: 0;
+    height: 30%;
+    min-height: 200px;
+    max-height: 250px;
+    text-align: center;
+  }
+  body .whole-body-container section.faq-container div.questions-answers-container {
+    width: 80%;
+    min-width: 300px;
+  }
+  body section.footer-section-container div.footer-contact-us-wrapper {
+    min-width: var(--mobile_width);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-height: 300px;
+  }
+  body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form input {
+    margin-right: 0;
+  }
+  body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form button.form-submit-btn {
+    margin-top: 1rem;
+    width: 260px;
+  }
+  body section.footer-foot-wrapper .footer-foot-wrapper_content {
+    min-width: var(--mobile_width);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section.footer-foot-wrapper .footer-foot-wrapper_content .logo-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .link {
+    margin: 1rem 0;
+  }
+  body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .link a {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=hero.css.map */
