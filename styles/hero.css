@@ -794,24 +794,63 @@ body section.footer-section-container div.footer-contact-us-wrapper form.contact
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1.5rem;
 }
 
-body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form input {
-  font-size: 16px;
-  padding: 0.8rem 0.5rem;
-  width: 260px;
-  border: none;
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper {
+  position: relative;
   background-color: white;
   border-radius: 5px;
   border: 2px solid white;
   margin-right: 1rem;
+  width: 360px;
+}
+
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper input {
+  font-size: 16px;
+  padding: 0.8rem 0.5rem;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper .error-message {
+  display: none;
+  width: 100%;
+  background-color: var(--softRed);
+  color: white;
+  font-style: italic;
+  -webkit-transition: height 0.3s ease-out;
+  transition: height 0.3s ease-out;
+  text-align: left;
+}
+
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper .info-warning {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-95%);
+          transform: translateY(-95%);
+  margin-right: 1rem;
+}
+
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper.invalid-error {
+  border-color: var(--softRed);
+}
+
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper.invalid-error .error-message {
+  display: block;
+}
+
+body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper.invalid-error .info-warning {
+  display: block;
 }
 
 body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form button.form-submit-btn {
@@ -850,6 +889,7 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content {
   max-width: var(--desktop_width);
   margin: 0 auto;
   padding: 3rem 1.5rem;
+  width: 100%;
 }
 
 body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper {
@@ -881,6 +921,27 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
 
 body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .link a:hover {
   color: var(--softRed);
+}
+
+body section.footer-foot-wrapper .footer-foot-wrapper_content div.media-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body section.footer-foot-wrapper .footer-foot-wrapper_content div.media-links a:first-of-type {
+  margin-right: 2rem;
 }
 
 @media only screen and (max-width: 1444px) {
@@ -1002,8 +1063,7 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
   body .whole-body-container section.footer-section-container div.footer-contact-us-wrapper h2 {
     font-size: clamp(2.1875rem, calc(1.7942rem + 1.573vw), 3.0625rem);
   }
-  body .whole-body-container section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form input {
-    width: 200px;
+  body .whole-body-container section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper input {
     padding: 0.5rem;
   }
   body .whole-body-container section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form button.form-submit-btn {
@@ -1146,7 +1206,11 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form input {
+  body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper {
+    width: 260px;
+    margin-right: 0;
+  }
+  body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form div.input-wrapper input {
     margin-right: 0;
   }
   body section.footer-section-container div.footer-contact-us-wrapper form.contact-us-form button.form-submit-btn {
@@ -1175,6 +1239,15 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
   }
   body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .link a {
     font-size: 20px;
+  }
+  body section.footer-foot-wrapper .footer-foot-wrapper_content div.media-links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 1.5rem;
   }
 }
 
