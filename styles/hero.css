@@ -1017,6 +1017,7 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
             transform: translateY(0);
   }
   body .whole-body-container {
+    margin: 0 auto;
     min-width: var(--mobile_width);
   }
   body .whole-body-container .header-navigation .navigation-links-wrapper {
