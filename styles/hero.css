@@ -1205,6 +1205,10 @@ body section.footer-foot-wrapper .footer-foot-wrapper_content .links-wrapper .li
   body .whole-body-container section.faq-container {
     margin: 5rem 0;
   }
+  body .whole-body-container section.faq-container div.questions-answers-container {
+    width: 100%;
+    min-width: 100%;
+  }
   body section.footer-section-container div.footer-contact-us-wrapper {
     max-width: var(--mobile_width);
   }

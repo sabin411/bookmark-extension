@@ -1028,6 +1028,11 @@ body {
       }
       section.faq-container {
         margin: 5rem 0;
+
+        div.questions-answers-container {
+          width: 100%;
+          min-width: 100%;
+        }
       }
     }
     section.footer-section-container {
