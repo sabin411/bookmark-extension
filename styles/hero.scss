@@ -974,3 +974,71 @@ body {
     }
   }
 }
+
+@media only screen and (max-width: 450px) {
+  body {
+    .whole-body-container {
+      max-width: var(--mobile_width);
+      .header-navigation {
+        height: calc(100vh - 90vh);
+        min-height: 90px;
+        max-height: 100px;
+      }
+      .banner-container {
+        height: calc(100vh - 10vh);
+        min-height: calc(900px - 90px);
+        max-height: calc(1080px - 100px);
+        margin-bottom: 0;
+        .left-banner-container_section {
+          h1.banner-title {
+            font-size: 25px;
+          }
+          .get-it-on-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+              padding: 0.5rem;
+              font-size: 14px;
+            }
+            a:first-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .feature-container {
+        .feature-tabs {
+        }
+        .individual-tab-details {
+          article.tab1-details {
+            .tab-details_left-section {
+              img {
+                height: 65%;
+              }
+            }
+          }
+        }
+      }
+      .feature-container {
+        margin: 5rem 0;
+      }
+      .download-extension-options-container {
+        margin: 5rem 0;
+      }
+      section.faq-container {
+        margin: 5rem 0;
+      }
+    }
+    section.footer-section-container {
+      div.footer-contact-us-wrapper {
+        max-width: var(--mobile_width);
+      }
+    }
+    section.footer-foot-wrapper {
+      .footer-foot-wrapper_content {
+        max-width: var(--mobile_width);
+      }
+    }
+  }
+}
